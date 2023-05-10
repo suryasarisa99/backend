@@ -5,7 +5,9 @@
   "main": "app.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.cjs"
+    "start": "node app.cjs",
+    "dev": "node app.cjs",
+    "build": "node i"
   },
   "author": "",
   "license": "ISC",
