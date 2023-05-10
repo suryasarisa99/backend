@@ -23,4 +23,8 @@ app.get("/data/:id", async (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("<h1>JayaSurya</h1>");
+});
+
 app.listen(process.env.PORT || 4000);
