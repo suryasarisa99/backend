@@ -1,6 +1,6 @@
 let express = require("express");
 let cors = require("cors");
-let { getStudentData } = require("./utils/getData.cjs");
+let { getStudentData } = require("./utils/getData");
 let app = express();
 
 app.use(express.urlencoded({ extended: false }));
