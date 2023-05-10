@@ -6,6 +6,12 @@ let app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    methods: "GET, POST",
+  })
+);
 app.get("/data/:id", async (req, res) => {
   let { id } = req.params;
   console.log(id);
