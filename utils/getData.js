@@ -8,7 +8,7 @@ let getBranch = {
   44: "csd",
 };
 async function getData(year, sem, branch) {
-  let file = path.join("data", `${year}-${sem}`, `${branch}`, `students.json`);
+  let file = path.join("/data", `${year}-${sem}`, `${branch}`, `students.json`);
   let data = await fs.readFile(file, "utf-8");
   return JSON.parse(data);
 }
